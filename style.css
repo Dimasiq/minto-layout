@@ -1,0 +1,159 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  border-top: 8px solid #a292b3;
+  border-bottom: 8px solid #a292b3; }
+
+.header-container {
+  max-width: 1000px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .header-container .logo {
+    margin-left: 0;
+    align-items: center;
+    align-self: flex-start;
+    text-decoration: none;
+    display: flex; }
+    .header-container .logo span {
+      font-size: 39px;
+      font-family: "Open Sans", sans-serif;
+      color: #a292b3; }
+    .header-container .logo img {
+      height: 70px;
+      width: 70px;
+      margin-right: 15px; }
+  .header-container .menu {
+    margin-right: 0;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    color: #545454;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 19px; }
+    .header-container .menu a {
+      margin-right: 60px;
+      text-decoration: none; }
+      .header-container .menu a:last-child {
+        margin-right: 0; }
+      .header-container .menu a:hover {
+        text-decoration: underline; }
+      .header-container .menu a i {
+        color: #a292b3;
+        margin-right: 10px; }
+
+.slider-container {
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px; }
+  .slider-container img {
+    width: 100%; }
+
+.text-container {
+  max-width: 1000px;
+  border-bottom: 1px solid #838383;
+  border-top: 1px solid #838383;
+  padding: 20px 40px; }
+  .text-container p {
+    color: #494848;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center; }
+    .text-container p span {
+      color: #a292b3;
+      font-weight: 600; }
+
+.content-container {
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px; }
+  .content-container img {
+    height: 300px;
+    min-width: 300px;
+    margin-right: 35px; }
+  .content-container .content {
+    align-self: baseline;
+    padding-top: 30px;
+    position: relative;
+    font-family: "Segoe WP", sans-serif; }
+    .content-container .content .cont-heading {
+      font-size: 30px; }
+    .content-container .content .cont-text {
+      font-size: 15px;
+      font-style: italic;
+      color: #838383; }
+    .content-container .content .more {
+      position: absolute;
+      right: 0px;
+      font-size: "$fz"-2;
+      line-height: 30px;
+      text-decoration: none;
+      color: #a292b3;
+      font-style: italic; }
+      .content-container .content .more:hover {
+        text-decoration: underline; }
+
+.features-container {
+  margin-top: 50px;
+  max-width: 1000px;
+  margin-bottom: 50px; }
+  .features-container .features-head {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 50px; }
+    .features-container .features-head p {
+      font-size: 23px;
+      font-family: "Segoe WP", sans-serif;
+      margin-right: 5px; }
+      .features-container .features-head p span {
+        font-weight: 600; }
+    .features-container .features-head .line {
+      border-bottom: 5px solid #e7e7e7;
+      flex: 1;
+      align-self: center; }
+  .features-container .features-blocks {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .features-container .features-blocks img {
+      width: 1000px; }
+
+footer {
+  background-color: #e7e7e7;
+  height: 65px; }
+  footer .footer-container {
+    max-width: 1000px;
+    display: flex; }
+    footer .footer-container .footer-text {
+      color: #454242;
+      margin-left: 0;
+      font-family: "Segoe UI", sans-serif;
+      font-size: 15px;
+      line-height: 65px; }
+    footer .footer-container .icons {
+      margin-right: 0; }
+      footer .footer-container .icons a {
+        line-height: 65px;
+        font-size: 30px;
+        color: #a292b3; }
+        footer .footer-container .icons a:hover {
+          opacity: 0.8; }
+        footer .footer-container .icons a:first-child {
+          margin-right: 20px; }
+
+@font-face {
+  font-family: "Segoe WP";
+  src: url("../fonts/ofont.ru_Segoe WP.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/*# sourceMappingURL=style.css.map */
