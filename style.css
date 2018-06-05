@@ -1,6 +1,4 @@
 * {
-  margin: 0 auto;
-  padding: 0;
   box-sizing: border-box; }
 
 body {
@@ -30,13 +28,12 @@ body {
   .header-container .menu {
     margin-right: 0;
     display: flex;
-    flex-direction: row;
     list-style: none;
-    color: #545454;
     font-family: "Segoe UI", sans-serif;
     font-size: 19px; }
     .header-container .menu a {
       margin-right: 60px;
+      color: #545454;
       text-decoration: none; }
       .header-container .menu a:last-child {
         margin-right: 0; }
@@ -47,6 +44,7 @@ body {
         margin-right: 10px; }
 
 .slider-container {
+  margin: 0 auto;
   max-width: 1000px;
   display: flex;
   justify-content: center;
@@ -56,6 +54,7 @@ body {
     width: 100%; }
 
 .text-container {
+  margin: 0 auto;
   max-width: 1000px;
   border-bottom: 1px solid #838383;
   border-top: 1px solid #838383;
@@ -71,6 +70,7 @@ body {
       font-weight: 600; }
 
 .content-container {
+  margin: 0 auto;
   max-width: 1000px;
   display: flex;
   justify-content: space-between;
@@ -81,14 +81,13 @@ body {
     min-width: 300px;
     margin-right: 35px; }
   .content-container .content {
-    align-self: baseline;
-    padding-top: 30px;
     position: relative;
     font-family: "Segoe WP", sans-serif; }
     .content-container .content .cont-heading {
       font-size: 30px; }
     .content-container .content .cont-text {
       font-size: 15px;
+      line-height: 30px;
       font-style: italic;
       color: #838383; }
     .content-container .content .more {
@@ -103,13 +102,12 @@ body {
         text-decoration: underline; }
 
 .features-container {
-  margin-top: 50px;
-  max-width: 1000px;
-  margin-bottom: 50px; }
+  margin: 50px auto;
+  max-width: 1000px; }
   .features-container .features-head {
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 50px; }
+    margin-bottom: 40px; }
     .features-container .features-head p {
       font-size: 23px;
       font-family: "Segoe WP", sans-serif;
@@ -123,22 +121,32 @@ body {
   .features-container .features-blocks {
     display: flex;
     justify-content: center;
-    align-items: center; }
-    .features-container .features-blocks img {
-      width: 1000px; }
+    align-items: center;
+    width: 1000px; }
+    .features-container .features-blocks a {
+      border-top: 1px solid #e7e7e7;
+      border-bottom: 1px solid #e7e7e7;
+      border-right: 1px solid #e7e7e7;
+      height: 70px; }
+      .features-container .features-blocks a:first-child {
+        border-left: 1px solid #e7e7e7; }
+      .features-container .features-blocks a img {
+        height: 70px; }
 
 footer {
   background-color: #e7e7e7;
   height: 65px; }
   footer .footer-container {
+    margin: 0 auto;
     max-width: 1000px;
-    display: flex; }
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
     footer .footer-container .footer-text {
       color: #454242;
       margin-left: 0;
       font-family: "Segoe UI", sans-serif;
-      font-size: 15px;
-      line-height: 65px; }
+      font-size: 15px; }
     footer .footer-container .icons {
       margin-right: 0; }
       footer .footer-container .icons a {

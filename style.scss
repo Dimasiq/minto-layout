@@ -8,8 +8,6 @@ $font-text: "Segoe WP", sans-serif;
 $font-sans: "Open Sans", sans-serif;
 
 *{
-  margin: 0 auto;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -44,13 +42,12 @@ body{
     .menu{
       margin-right: 0;
       display: flex;
-      flex-direction: row;
       list-style: none;
-      color: #545454;
       font-family: $font-main;
       font-size: $fz+4;
       a{
         margin-right: 60px;
+        color: #545454;
         text-decoration: none;
         &:last-child{
           margin-right: 0;
@@ -66,6 +63,7 @@ body{
       }
     }
 .slider-container{
+  margin: 0 auto;
   max-width: $width;
   display: flex;
   justify-content: center;
@@ -76,6 +74,7 @@ body{
   }
 }
 .text-container{
+  margin: 0 auto;
   max-width: $width;
   border-bottom: 1px solid $gray;
   border-top: 1px solid $gray;
@@ -93,6 +92,7 @@ body{
   }
 }
 .content-container{
+  margin: 0 auto;
   max-width: $width;
   display: flex;
   justify-content: space-between;
@@ -104,8 +104,6 @@ body{
     margin-right: 35px;
   }
   .content{
-    align-self: baseline;
-    padding-top: 30px;
     position: relative;
     font-family: $font-text;
     .cont-heading{
@@ -113,6 +111,7 @@ body{
     }
     .cont-text{
       font-size: $fz;
+      line-height: $fz*2;
       font-style: italic;
       color: $gray;
     }
@@ -131,13 +130,12 @@ body{
   }
 }
 .features-container{
-  margin-top: 50px;
+  margin: 50px auto;
   max-width: $width;
-  margin-bottom: 50px;
   .features-head{
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     p{
       font-size: $fz+8;
       font-family: $font-text;
@@ -156,8 +154,18 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    img{
-      width: $width;
+    width: $width;
+    a{
+    border-top: 1px solid $lightgray;
+    border-bottom: 1px solid $lightgray;
+    border-right: 1px solid $lightgray;
+    height: 70px;
+       &:first-child{
+        border-left: 1px solid $lightgray;
+      }
+      img{
+        height: 70px;
+      }
     }
   }
 }
@@ -165,14 +173,16 @@ footer{
   background-color: $lightgray;
   height: 65px;
   .footer-container{
+    margin: 0 auto;
     max-width: $width;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     .footer-text{
       color: #454242;
       margin-left: 0;
       font-family: $font-main;
       font-size: $fz;
-      line-height: 65px;
     }
     .icons{
       margin-right: 0;
