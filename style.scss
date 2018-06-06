@@ -3,6 +3,7 @@ $purple: #a292b3;
 $lightgray: #e7e7e7;
 $gray: #838383;
 $width: 1000px;
+$border: 1px solid $lightgray;
 $font-main: "Segoe UI", sans-serif;
 $font-text: "Segoe WP", sans-serif;
 $font-sans: "Open Sans", sans-serif;
@@ -16,8 +17,11 @@ body{
   border-bottom: 8px solid $purple;
 };
 
-.header-container{
-  max-width: $width;
+.container{
+  width: $width;
+}
+
+.header{
   margin: 30px auto;
   display: flex;
   justify-content: space-between;
@@ -62,9 +66,8 @@ body{
         }
       }
     }
-.slider-container{
+.slider{
   margin: 0 auto;
-  max-width: $width;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,11 +76,10 @@ body{
     width: 100%;
   }
 }
-.text-container{
+.text{
   margin: 0 auto;
-  max-width: $width;
-  border-bottom: 1px solid $gray;
-  border-top: 1px solid $gray;
+  border-bottom: $border;
+  border-top: $border;
   padding: 20px 40px;
   p{
     color: #494848;
@@ -91,9 +93,8 @@ body{
     }
   }
 }
-.content-container{
+.content{
   margin: 0 auto;
-  max-width: $width;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -103,7 +104,7 @@ body{
     min-width: 300px;
     margin-right: 35px;
   }
-  .content{
+  .content-main{
     position: relative;
     font-family: $font-text;
     .cont-heading{
@@ -129,9 +130,8 @@ body{
     }
   }
 }
-.features-container{
+.features{
   margin: 50px auto;
-  max-width: $width;
   .features-head{
     display: flex;
     justify-content: flex-start;
@@ -154,14 +154,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: $width;
     a{
-    border-top: 1px solid $lightgray;
-    border-bottom: 1px solid $lightgray;
-    border-right: 1px solid $lightgray;
+    border-top: $border;
+    border-bottom: $border;
+    border-right: $border;
     height: 70px;
        &:first-child{
-        border-left: 1px solid $lightgray;
+        border-left: $border;
       }
       img{
         height: 70px;
@@ -172,9 +171,8 @@ body{
 footer{
   background-color: $lightgray;
   height: 65px;
-  .footer-container{
+  .footer{
     margin: 0 auto;
-    max-width: $width;
     display: flex;
     justify-content: space-between;
     align-items: center;

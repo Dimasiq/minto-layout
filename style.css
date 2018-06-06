@@ -5,92 +5,91 @@ body {
   border-top: 8px solid #a292b3;
   border-bottom: 8px solid #a292b3; }
 
-.header-container {
-  max-width: 1000px;
+.container {
+  width: 1000px; }
+
+.header {
   margin: 30px auto;
   display: flex;
   justify-content: space-between;
   align-items: center; }
-  .header-container .logo {
+  .header .logo {
     margin-left: 0;
     align-items: center;
     align-self: flex-start;
     text-decoration: none;
     display: flex; }
-    .header-container .logo span {
+    .header .logo span {
       font-size: 39px;
       font-family: "Open Sans", sans-serif;
       color: #a292b3; }
-    .header-container .logo img {
+    .header .logo img {
       height: 70px;
       width: 70px;
       margin-right: 15px; }
-  .header-container .menu {
+  .header .menu {
     margin-right: 0;
     display: flex;
     list-style: none;
     font-family: "Segoe UI", sans-serif;
     font-size: 19px; }
-    .header-container .menu a {
+    .header .menu a {
       margin-right: 60px;
       color: #545454;
       text-decoration: none; }
-      .header-container .menu a:last-child {
+      .header .menu a:last-child {
         margin-right: 0; }
-      .header-container .menu a:hover {
+      .header .menu a:hover {
         text-decoration: underline; }
-      .header-container .menu a i {
+      .header .menu a i {
         color: #a292b3;
         margin-right: 10px; }
 
-.slider-container {
+.slider {
   margin: 0 auto;
-  max-width: 1000px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px; }
-  .slider-container img {
+  .slider img {
     width: 100%; }
 
-.text-container {
+.text {
   margin: 0 auto;
-  max-width: 1000px;
-  border-bottom: 1px solid #838383;
-  border-top: 1px solid #838383;
+  border-bottom: 1px solid #e7e7e7;
+  border-top: 1px solid #e7e7e7;
   padding: 20px 40px; }
-  .text-container p {
+  .text p {
     color: #494848;
     font-family: "Segoe UI", sans-serif;
     font-size: 20px;
     font-style: italic;
     text-align: center; }
-    .text-container p span {
+    .text p span {
       color: #a292b3;
       font-weight: 600; }
 
-.content-container {
+.content {
   margin: 0 auto;
-  max-width: 1000px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 30px; }
-  .content-container img {
+  .content img {
     height: 300px;
     min-width: 300px;
     margin-right: 35px; }
-  .content-container .content {
+  .content .content-main {
     position: relative;
     font-family: "Segoe WP", sans-serif; }
-    .content-container .content .cont-heading {
+    .content .content-main .cont-heading {
       font-size: 30px; }
-    .content-container .content .cont-text {
+    .content .content-main .cont-text {
       font-size: 15px;
       line-height: 30px;
       font-style: italic;
       color: #838383; }
-    .content-container .content .more {
+    .content .content-main .more {
       position: absolute;
       right: 0px;
       font-size: "$fz"-2;
@@ -98,64 +97,61 @@ body {
       text-decoration: none;
       color: #a292b3;
       font-style: italic; }
-      .content-container .content .more:hover {
+      .content .content-main .more:hover {
         text-decoration: underline; }
 
-.features-container {
-  margin: 50px auto;
-  max-width: 1000px; }
-  .features-container .features-head {
+.features {
+  margin: 50px auto; }
+  .features .features-head {
     display: flex;
     justify-content: flex-start;
     margin-bottom: 40px; }
-    .features-container .features-head p {
+    .features .features-head p {
       font-size: 23px;
       font-family: "Segoe WP", sans-serif;
       margin-right: 5px; }
-      .features-container .features-head p span {
+      .features .features-head p span {
         font-weight: 600; }
-    .features-container .features-head .line {
+    .features .features-head .line {
       border-bottom: 5px solid #e7e7e7;
       flex: 1;
       align-self: center; }
-  .features-container .features-blocks {
+  .features .features-blocks {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 1000px; }
-    .features-container .features-blocks a {
+    align-items: center; }
+    .features .features-blocks a {
       border-top: 1px solid #e7e7e7;
       border-bottom: 1px solid #e7e7e7;
       border-right: 1px solid #e7e7e7;
       height: 70px; }
-      .features-container .features-blocks a:first-child {
+      .features .features-blocks a:first-child {
         border-left: 1px solid #e7e7e7; }
-      .features-container .features-blocks a img {
+      .features .features-blocks a img {
         height: 70px; }
 
 footer {
   background-color: #e7e7e7;
   height: 65px; }
-  footer .footer-container {
+  footer .footer {
     margin: 0 auto;
-    max-width: 1000px;
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    footer .footer-container .footer-text {
+    footer .footer .footer-text {
       color: #454242;
       margin-left: 0;
       font-family: "Segoe UI", sans-serif;
       font-size: 15px; }
-    footer .footer-container .icons {
+    footer .footer .icons {
       margin-right: 0; }
-      footer .footer-container .icons a {
+      footer .footer .icons a {
         line-height: 65px;
         font-size: 30px;
         color: #a292b3; }
-        footer .footer-container .icons a:hover {
+        footer .footer .icons a:hover {
           opacity: 0.8; }
-        footer .footer-container .icons a:first-child {
+        footer .footer .icons a:first-child {
           margin-right: 20px; }
 
 @font-face {
